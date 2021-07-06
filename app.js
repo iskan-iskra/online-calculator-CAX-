@@ -110,7 +110,7 @@ class draw extends plane{
             //      мнимая концевая хорда bk
             ctx.beginPath()
             ctx.strokeStyle ='red';
-            ctx.moveTo(0,5+ this.l/2);
+            ctx.moveTo(this.b0,5+ this.l/2);
             ctx.lineTo(this.b0 + this.bk,5+ this.l/2);
             ctx.stroke();
             //      действительная корневая хорда b0
