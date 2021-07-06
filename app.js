@@ -187,9 +187,9 @@ findClass('.calc','main').addEventListener('click',()=>{
                         findClass('.sweep_angle','.given_data').value);
     console.log(wing);
     if(wing.checkNull()){
-            findClass('.MAC_ba','.received_data').innerHTML = 'ba, длина САХ = '+ round(wing.getMACba(),100)/100 +'м';
-            findClass('.MAC_za','.received_data').innerHTML = 'za, координата z САХ = '+round(wing.getMACza(),100)/100 +'м';
-            findClass('.MAC_xa','.received_data').innerHTML = 'xa, координата x САХ = '+round(wing.getMACxa(),100)/100 +'м';
+            findClass('.MAC_ba','.received_data').innerHTML = 'ba, длина САХ = '+ Math.round(wing.getMACba(),100)/100 +'м';
+            findClass('.MAC_za','.received_data').innerHTML = 'za, координата z САХ = '+ Math.round(wing.getMACza(),100)/100 +'м';
+            findClass('.MAC_xa','.received_data').innerHTML = 'xa, координата x САХ = '+ Math.round(wing.getMACxa(),100)/100 +'м';
 
             wing.setDrawAttr();
             wing.drawCanvas();
