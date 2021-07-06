@@ -42,8 +42,8 @@ class draw extends plane{
         {this._elbyID.setAttribute("width", this._drawWidth)
          this._elbyID.setAttribute('Height', this._drawHeight)
         //  для отрисовки canvas в полном масштабе на странице
-        //  this._elbyID.style.width = this._drawWidth
-        //  this._elbyID.style.height = this._drawHeight
+        this._elbyID.style.width = '80vw';
+        this._elbyID.style.height = 80*(this._drawHeight-10)/this._drawWidth + 'vw';
         }
     drawCanvas(){
         let ctx = this._elbyID.getContext('2d')
