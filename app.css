@@ -26,6 +26,4 @@ main {
 #draw{
     border: 1px solid darkblue;
     background-color: gainsboro;
-    width: 80vw;
-    height: 50vh;
 }
