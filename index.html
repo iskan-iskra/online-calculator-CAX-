@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main>
+        <h1>САХ КРЫЛА</h1>
+        <div class="given_data">
+            <input type="number" placeholder="bo/ba, корневая хорда [м]" class="root_chord">
+            <input type="number" placeholder="bк, концевая хорда [м]" class="end_chord">
+            <input type="number" placeholder="l, размах крыла [м]" class="length">
+            <input type="number" placeholder="}{пк, угл стрел [градусы]" class="sweep_angle">
+        </div>
+        <button class="calc">Расчитать САХ</button>
+        <div class="received_data">
+            <div class="MAC_ba"></div>
+            <div class="MAC_za"></div>
+            <div class="MAC_xa"></div>
+        </div>
+        <div>Чертеж:</div>
+        <div>
+            <span style="color: blue;">Синия линия</span>
+            <span> - это корневая хорда</span>
+        </div>
+        <div>
+            <span style="color: red;">Красная линия</span>
+            <span> - это концевая хорда</span>
+        </div>
+        <div>
+            <span style="color: green;">Зеленая линия</span>
+            <span> - это средняя аэродинамеческая хорда</span>
+        </div>
+        <canvas id="draw"></canvas>
+    </main>
+    <script src="app.js"></script>
+</body>

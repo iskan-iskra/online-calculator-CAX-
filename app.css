@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+}
+.given_data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.given_data input {
+    display: block;
+
+}
+.received_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.received_data div {
+    display: block;
+}
+#draw{
+    border: 1px solid darkblue;
+    background-color: gainsboro;
+    width: 80vw;
+    height: 50vh;
+}
